@@ -1,0 +1,67 @@
+<div class="_2titles">
+<div class="_2titles-outdoor-dining"><img src="{{media url="wysiwyg/Image.png"}}" alt="">
+<div class="_2titles-outdoor-dining-contents"><span class="_2titles-titles">outdoor dining</span><button class="action secondary">shop now</button></div>
+</div>
+<div class="_2titles-outdoor-lounges"><img src="{{media url="wysiwyg/Image_2.png"}}" alt="">
+<div class="_2titles-outdoor-lounges-contents"><span class="_2titles-titles">outdoor lounges</span><button class="action secondary">shop now</button></div>
+</div>
+</div>
+<div class="reason-to-buy">
+<ul class="reason-to-buy-slider">
+<li>OUTDOOR FURNITURE CLEARANCE STORE</li>
+<li>We ship australia wide</li>
+<li>30 Day money Back Guarantee</li>
+</ul>
+</div>
+<div class="banner">
+<ul class="slick-banner">
+<li>
+<div class="vogue-collection"><img src="{{media url="wysiwyg/Image_1_.png"}}" alt="">
+<div class="text"><span class="text-title">Vogue Collection</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary">shop now</button></div>
+</div>
+</li>
+<li>
+<div class="maldives-collection"><img src="{{media url="wysiwyg/Image_2_.png"}}" alt="">
+<div class="text"><span class="text-title">Maldives Collection</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary">shop now</button></div>
+</div>
+</li>
+<li>
+<div class="marseilles-collection"><img src="{{media url="wysiwyg/Image_3_.png"}}" alt="">
+<div class="text"><span class="text-title">Marseilles Collection</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary">shop now</button></div>
+</div>
+</li>
+<li>
+<div class="vogue-collection"><img src="{{media url="wysiwyg/Image_1_.png"}}" alt="">
+<div class="text"><span class="text-title">Vogue Collection</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary">shop now</button></div>
+</div>
+</li>
+<li>
+<div class="maldives-collection"><img src="{{media url="wysiwyg/Image_2_.png"}}" alt="">
+<div class="text"><span class="text-title">Maldives Collection</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary">shop now</button></div>
+</div>
+</li>
+<li>
+<div class="marseilles-collection"><img src="{{media url="wysiwyg/Image_3_.png"}}" alt="">
+<div class="text"><span class="text-title">Marseilles Collection</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+<button class="action primary">shop now</button></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="_2tiles">
+<div class="_2tiles-left"><img src="{{media url="wysiwyg/1.png"}}" alt="">
+<div class="_2tiles-left-contents"><span class="hehe">catalogues</span><button class="action secondary">explore now</button></div>
+</div>
+<div class="_2tiles-right"><img src="{{media url="wysiwyg/2.png"}}" alt=""></div>
+</div>
