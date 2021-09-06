@@ -1,0 +1,18 @@
+<div class="categ sub-middle">  
+    <?php
+    $objectManager =  \Magento\Framework\App\ObjectManager::getInstance();
+    $categoryCollection = $objectManager->get('\Magento\Catalog\Model\ResourceModel\Category\CollectionFactory');
+
+
+    $categoryHelper = $objectManager->get('\Magento\Catalog\Helper\Category');
+    $categories = $categoryHelper->getStoreCategories();
+
+    ?>
+    <div data-role="collapsible">
+    <span class="accordion" data-role="trigger">category</span></div>
+    <ul data-role="content">
+        <?php foreach ($categories as $category) { ?>
+            <li><a href="#"><?php echo $category->getName();
+                        } ?></a></li>
+    </ul>
+</div>

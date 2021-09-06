@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="default_head_blocks"/>
+    <body>
+        <referenceBlock name="register-link" remove="true" />
+        <referenceBlock name="wish-list-link" remove="true" />
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="catalog.compare.link" remove="true" />
+        <referenceBlock name="footer_links" remove="true"/>
+        <move element="form.subscribe" destination="newsletter-wrapper" after="newsletter"/>
+        <referenceBlock name="copyright" remove="true"/>
+        <!-- <referenceBlock name="form.subscribe" remove="true"/> -->
+        <!-- <referenceBlock name="view.addto.wishlist" remove="true" /> -->
+        <!-- <referenceBlock name="my-account-link" remove="true" /> -->
+        <!-- <referenceBlock name="header" remove="true"/> -->
+
+        <referenceBlock name="header.links">
+            <block class="AHT\Pike\Block\Link" name="add-new-header-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Blog</argument>
+                </arguments>
+            </block>
+            <block class="AHT\Pike\Block\Instagram" name="instagram"/>
+            <block class="AHT\Pike\Block\Facebook" name="facebook"/>
+        </referenceBlock>
+
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="header-left" before="-" template="Magento_Theme::header_left.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="header-left-r" after="header-midle-r" template="Magento_Theme::header_left_r.phtml"/>
+
+            <block class="Magento\Framework\View\Element\Template" name="header-midle" after="header-left" template="Magento_Theme::header_middle.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="header-midle-r" template="Magento_Theme::header_middle_r.phtml"/>
+
+        </referenceContainer>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="search-r" after="-" template="Magento_Theme::search_r.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="footer">
+            <container name="footer-top" as="footer-top" label="Inside Page Footer" before="-" htmlTag="div" htmlClass="footer-top">
+                <block class="Magento\Framework\View\Element\Template" name="footer-top-left" before="-" template="Magento_Theme::footer_top_left.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="footer-top-middle" after="footer-top" template="Magento_Theme::footer_top_middle.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="footer-top-right" after="-" template="Magento_Theme::footer_top_right.phtml"/>
+            </container>
+
+            <block class="Magento\Framework\View\Element\Template" name="footer-banner" after="footer-top" template="Magento_Theme::footer_banner.phtml"/>
+
+            <container name="top" htmlTag="div" after="footer-banner" htmlClass="top content">
+                <container name="top-contents" htmlTag="div" htmlClass="top-contents">
+                    <block class="AHT\Pike\Block\Top1" name="top-1" before="-"/>
+                    <block class="AHT\Pike\Block\Top2" name="top-2" after="top-1"/>
+                    <block class="AHT\Pike\Block\Top3" name="top-3" after="top-2"/>
+                    <block class="AHT\Pike\Block\Top4" name="top-4" after="top-3"/>
+                </container>
+            </container>
+            <container name="middle" htmlTag="div" after="top" htmlClass="middle">
+                <block class="Magento\Framework\View\Element\Template" name="categ" before="-" template="Magento_Theme::categ.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="why-burning-log" after="categ" template="Magento_Theme::why_burning_log.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="our-policies" after="why-burning-log" template="Magento_Theme::our_policies.phtml"/>
+                <container name="newsletter-wrapper" htmlTag="div" after="our-policies" htmlClass="newsletter-wrapper">
+                    <block class="Magento\Framework\View\Element\Template" name="newsletter" before="-" template="Magento_Theme::newsletter.phtml"/>
+                    <block class="Magento\Framework\View\Element\Template" name="newsletter.icons" after="-" template="Magento_Theme::newsletter_icons.phtml"/>
+                </container>
+            </container>
+            <container name="custom-copyright" htmlTag="div" after="middle" htmlClass="custom-copyright">
+                <block class="Magento\Framework\View\Element\Template" name="copyright-text" before="-" template="Magento_Theme::copyright_text.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="copyright-payments" after="copyright-text" template="Magento_Theme::copyright_payments.phtml"/>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
